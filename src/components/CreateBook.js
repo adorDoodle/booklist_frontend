@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import '../App.css';
 import axios from 'axios';
 
@@ -12,16 +12,6 @@ function CreateBook() {
     const [description, setdescription] = useState('');
     const [publishedDate, setpublishedDate] = useState('');
     const [publisher, setpublisher] = useState('');
-
-    // useEffect(() => {
-    //     console.log(title)
-    //     toast('success')
-    // }, []);
-
-
-    const onChange = e => {
-        // this.setState({ [e.target.name]: e.target.value });
-    };
 
     const onSubmit = e => {
         e.preventDefault();
